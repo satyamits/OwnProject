@@ -6,13 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CFA469BD0D5EF4EE1C355140 /* Pods_CustomAuthPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC21D72EBCDAD4D6E2B28B3A /* Pods_CustomAuthPage.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		414D5D77796E26713ACEE101 /* Pods-CustomAuthPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAuthPage.release.xcconfig"; path = "Target Support Files/Pods-CustomAuthPage/Pods-CustomAuthPage.release.xcconfig"; sourceTree = "<group>"; };
 		712A2DCD2D1FEB3F007F02CC /* CustomAuthPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAuthPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC21D72EBCDAD4D6E2B28B3A /* Pods_CustomAuthPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAuthPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D572FD5F762CCBCF8650C3E9 /* Pods-CustomAuthPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAuthPage.debug.xcconfig"; path = "Target Support Files/Pods-CustomAuthPage/Pods-CustomAuthPage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		712A2E1D2D1FF794007F02CC /* Exceptions for "CustomAuthPage" folder in "CustomAuthPage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 712A2DCC2D1FEB3F007F02CC /* CustomAuthPage */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		712A2DCF2D1FEB3F007F02CC /* CustomAuthPage */ = {
+		712A2DF42D1FEDF0007F02CC /* CustomAuthPage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				712A2E1D2D1FF794007F02CC /* Exceptions for "CustomAuthPage" folder in "CustomAuthPage" target */,
+			);
 			path = CustomAuthPage;
 			sourceTree = "<group>";
 		};
@@ -23,19 +43,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA469BD0D5EF4EE1C355140 /* Pods_CustomAuthPage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13D9F2A89E84800765927271 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D572FD5F762CCBCF8650C3E9 /* Pods-CustomAuthPage.debug.xcconfig */,
+				414D5D77796E26713ACEE101 /* Pods-CustomAuthPage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6DFD19125E3D1983C0666404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC21D72EBCDAD4D6E2B28B3A /* Pods_CustomAuthPage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		712A2DC42D1FEB3F007F02CC = {
 			isa = PBXGroup;
 			children = (
-				712A2DCF2D1FEB3F007F02CC /* CustomAuthPage */,
+				712A2DF42D1FEDF0007F02CC /* CustomAuthPage */,
 				712A2DCE2D1FEB3F007F02CC /* Products */,
+				13D9F2A89E84800765927271 /* Pods */,
+				6DFD19125E3D1983C0666404 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		712A2DCE2D1FEB3F007F02CC /* Products */ = {
 			isa = PBXGroup;
@@ -52,20 +93,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 712A2DDD2D1FEB42007F02CC /* Build configuration list for PBXNativeTarget "CustomAuthPage" */;
 			buildPhases = (
+				D757C399F0846DDA26DB7A09 /* [CP] Check Pods Manifest.lock */,
 				712A2DC92D1FEB3F007F02CC /* Sources */,
 				712A2DCA2D1FEB3F007F02CC /* Frameworks */,
 				712A2DCB2D1FEB3F007F02CC /* Resources */,
+				712A2E4D2D1FFB66007F02CC /* SwiftGen */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				712A2DCF2D1FEB3F007F02CC /* CustomAuthPage */,
+				712A2DF42D1FEDF0007F02CC /* CustomAuthPage */,
 			);
 			name = CustomAuthPage;
-			packageProductDependencies = (
-			);
 			productName = CustomAuthPage;
 			productReference = 712A2DCD2D1FEB3F007F02CC /* CustomAuthPage.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +154,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		712A2E4D2D1FFB66007F02CC /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		D757C399F0846DDA26DB7A09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomAuthPage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		712A2DC92D1FEB3F007F02CC /* Sources */ = {
@@ -246,6 +331,7 @@
 		};
 		712A2DDE2D1FEB42007F02CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D572FD5F762CCBCF8650C3E9 /* Pods-CustomAuthPage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -255,6 +341,7 @@
 				DEVELOPMENT_TEAM = 6F297V6KVM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomAuthPage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -275,6 +362,7 @@
 		};
 		712A2DDF2D1FEB42007F02CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414D5D77796E26713ACEE101 /* Pods-CustomAuthPage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -284,6 +372,7 @@
 				DEVELOPMENT_TEAM = 6F297V6KVM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomAuthPage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
